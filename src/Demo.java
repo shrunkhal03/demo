@@ -14,7 +14,8 @@ public class Demo {
                 new Employee(2L,"ram",300),
                 new Employee(3L,"bam",200),
                 new Employee(3L,"Shanku",5000),
-                new Employee(4L,"rishi",2000));
+                new Employee(4L,"rishi",2000),
+                new Employee(5L,"d",50000));
 
         List<String> collect = list.stream().filter(n -> n.getSalary() >= 20000).map(Employee::getName).collect(Collectors.toList());
         System.out.println(collect);
